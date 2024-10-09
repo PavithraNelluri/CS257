@@ -1,11 +1,11 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navbar Styling */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -13,18 +13,18 @@
     width: 100%;
     background-color:rgb(3, 3, 3);
     padding: 9px 0;
-    z-index: 1000; /* Ensures the navbar is always on top */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .nav-container {
     width: 100%;
-    max-width: 1200px; /* Ensures content is centered and doesn't stretch too wide */
-    margin: 0 auto; /* Centers the nav container */
+    max-width: 1200px; 
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adds padding to left and right of navbar */
+    padding: 0 20px; 
 }
 
 .nav-logo {
@@ -55,10 +55,10 @@
     color: rgb(244, 237, 237);
     border-radius: 4px;
 }
-/* Content Styling */
+/
 .content {
     text-align: center;
-    margin-top: 100px; /* This accounts for the fixed navbar height */
+    margin-top: 100px; 
 }
 .font{
     font-size: 40px;
@@ -66,17 +66,16 @@
 
 .moving-text {
     font-size: 24px;
-    opacity: 1; /* Start hidden */
-    transition: opacity 0.5s ease; /* Transition for fading */
+    opacity: 1; 
+    transition: opacity 0.5s ease;
 }
 
-/* Keyframes for moving text */
+
 @keyframes moveText {
     0% { transform: translateX(-100px); }
     100% { transform: translateX(100px); }
 }
 
-/* Responsive Design for Smaller Screens */
 @media only screen and (max-width: 768px) {
     .nav-container {
         flex-direction: column;

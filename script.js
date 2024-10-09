@@ -4,7 +4,7 @@ window.onload = function() {
     
     movingTexts.forEach((text, index) => {
         setTimeout(() => {
-            text.classList.add('fade-out'); // Add class to trigger CSS animation
-        }, index * 500); // Stagger the animation
+            text.classList.add('fade-out'); 
+        }, index * 500); 
     });
 };
